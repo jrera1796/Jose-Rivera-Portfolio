@@ -26,14 +26,9 @@ header h1{
  text-align: center;
 }
 
-header h1 a{
-  
-  text-align: center;
-}
-
 header nav{
   padding-top: 15px;
-  margin-right: 20px;
+  
   flex-wrap: center;
   
 }
@@ -43,7 +38,7 @@ header nav ul{
 }
 
 header nav ul li{
-  display: inline-block;
+  /* display: inline-block; */
 }
 header nav ul li a{
   color: white;
