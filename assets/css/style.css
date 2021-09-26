@@ -112,6 +112,6 @@ section .about-info{
 }
 
 .contact-info{
-  width: 100%
+  width: 100%;
   float: right;
 }
