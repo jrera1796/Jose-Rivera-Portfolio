@@ -24,6 +24,12 @@ header, footer {
   text-align: center;
 }
 
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 header h1{
   display: inline-block;
   font-size: 48px;
@@ -33,7 +39,7 @@ header h1{
 header nav{
   padding-top: 15px;
   
-  flex-wrap: center;
+  
 }
 
 header nav ul{
@@ -51,16 +57,51 @@ header nav ul li a{
 .hero{
   border-width: 40px;
   border-color: red;
-  border: 20px 20px 20px 20px;
+  
+  background-image: url("../images/hero-bg.jpg");
+  height: 300px;
+  
+}
+
+.hero-title{
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+}
+
+section img{
+  width: 150px;
+  display: block;
+  position: relative;
+justify-content: space-around;
+padding: 3px; 
 }
 
 section{
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+/* flex-direction: column; */
+/* justify-content: space-around; */
 }
 
 .section-title{
+  width: 150px;
+  margin: 25px;
+  /* float: left; */
   color: white;
-text-align: center;
+  text-align: center;
+  border-right: 2px solid black;
+  height: 150px;
+  /* display: block; */
+  flex-direction: column;
+  /* padding-left: 25px; */
+  flex-wrap: wrap;
+}
+
+section p{
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
 }
 
 section .about-info{
@@ -72,4 +113,5 @@ section .about-info{
 
 .contact-info{
   width: 100%
+  float: right;
 }
