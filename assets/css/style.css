@@ -72,7 +72,9 @@ header nav ul li a{
   border-color: red;
   
   background-image: url("../images/hero-bg.jpg");
-  height: 300px;
+  background-size: cover;
+  background-position: bottom;
+  height: 600px;
   background-color: purple;
 }
 
