@@ -11,13 +11,15 @@ body{
 
 p, a{
   color: white;
+ 
 }
 
 p{
   display: flex;
   flex: 1;
   padding-right: 15px;
-  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 h4{
@@ -49,6 +51,7 @@ header h1{
   display: inline-block;
   font-size: 48px;
  text-align: center;
+ 
 }
 
 header nav{
@@ -131,4 +134,45 @@ section .about-info{
 .contact-info{
   width: 100%;
   float: right;
+}
+
+section h2 p{
+  text-align: left;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+ section{
+   padding: 30px 15px;
+  }
+
+  section img {
+   flex: 0 32%;
+   margin-right: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+  }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+   .section-title {
+   width: 95%;
+  }
+
 }
