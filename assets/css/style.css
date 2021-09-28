@@ -20,6 +20,15 @@ p{
   padding-right: 15px;
   padding-top: 20px;
   font-size: 20px;
+  top: 50%;
+    position: relative;
+    left: 100%;
+}
+
+h2{
+  top: 50%;
+    position: relative;
+    left: 150%;
 }
 
 h4{
