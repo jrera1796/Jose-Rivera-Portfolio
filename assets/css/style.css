@@ -81,6 +81,7 @@ header nav ul li a{
   background-size: cover;
   background-position: bottom;
   height: 600px;
+  
   background-color: purple;
 }
 
@@ -93,11 +94,20 @@ header nav ul li a{
 }
 
 section img{
-  width: 150px;
-  display: block;
+  width: 100%;
+  display: flex;
   position: relative;
 justify-content: space-around;
-padding: 3px; 
+flex-wrap: wrap;
+padding-right: 10px; 
+}
+
+section div{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 30%;
+  
 }
 
 section{
@@ -176,14 +186,13 @@ section h2 p{
   }
 
   section img {
-   flex: 0 1 10%;
-   margin-right: 0;
-   margin-top: 15px;
-   margin-bottom: 15px;
+   /* flex: 0 1 10%; */
+  
    display: flex;
+   flex-wrap: wrap;
     justify-content: center;
-  width: auto;
-  box-sizing: content-box;
+  
+  /* box-sizing: content-box; */
   }
 
   .section-title{
@@ -192,6 +201,8 @@ section h2 p{
     width: auto;
     
   }
+
+  
 
   section p{
     width: auto;
