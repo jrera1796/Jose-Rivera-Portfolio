@@ -113,6 +113,7 @@ section div{
 section{
   /* text-align: center; */
   display: flex;
+  flex-wrap: wrap;
 /* flex-direction: column; */
 /* justify-content: space-around; */
 }
@@ -151,6 +152,10 @@ section .about-info{
 
 .contact-info p{
   padding-right: 15px;
+}
+
+section h3{
+  justify-content: center;
 }
 
 section h2 p{
