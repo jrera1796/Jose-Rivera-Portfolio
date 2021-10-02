@@ -93,7 +93,16 @@ header nav ul li a{
 
 }
 
-section img{
+.card1{
+  width: 100%;
+  display: block;
+  position: relative;
+justify-content: space-around;
+flex-wrap:;
+padding-right: 10px; 
+}
+
+.card2{
   width: 100%;
   display: flex;
   position: relative;
@@ -101,8 +110,9 @@ justify-content: space-around;
 flex-wrap: wrap;
 padding-right: 10px; 
 }
+/* Article Section*/
 
-section div{
+.art-img{
   display: flex; 
   flex-wrap: wrap;
   justify-content: center;
@@ -111,12 +121,11 @@ section div{
 }
 
 section{
-  /* text-align: center; */
   display: flex;
   flex-wrap: wrap;
-/* flex-direction: column; */
-/* justify-content: space-around; */
+
 }
+
 
 .section-title{
   width: 150px;
@@ -125,7 +134,7 @@ section{
   color: white;
   text-align: center;
   border-right: 2px solid black;
-  height: 150px;
+  height: max-content;
   
   flex-direction: column;
   
@@ -149,7 +158,10 @@ section .about-info{
   width: 100%;
   float: right;
 }
-
+a{
+  
+  display: inline-block;
+}
 .contact-info p{
   padding-right: 15px;
 }
