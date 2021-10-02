@@ -20,19 +20,13 @@ p{
   padding-right: 15px;
   padding-top: 20px;
   font-size: 20px;
-  top: 50%;
-    position: relative;
-    left: 100%;
+  
 }
 
-h2{
-  top: 50%;
-    position: relative;
-    left: 150%;
-}
 
 h4{
-  color: white;
+ color: white;
+ 
 }
 
 header, footer {
@@ -53,7 +47,7 @@ footer{
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 header h1{
@@ -87,6 +81,7 @@ header nav ul li a{
   background-size: cover;
   background-position: bottom;
   height: 600px;
+  
   background-color: purple;
 }
 
@@ -98,32 +93,51 @@ header nav ul li a{
 
 }
 
-section img{
-  width: 150px;
+.card1{
+  width: 100%;
   display: block;
   position: relative;
 justify-content: space-around;
-padding: 3px; 
+flex-wrap:wrap;
+padding-right: 10px; 
+}
+
+.card2{
+  width: 100%;
+  display: flex;
+  position: relative;
+justify-content: space-around;
+flex-wrap: wrap;
+padding-right: 10px; 
+}
+/* Article Section*/
+
+.art-img{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 30%;
+  
 }
 
 section{
-  /* text-align: center; */
   display: flex;
-/* flex-direction: column; */
-/* justify-content: space-around; */
+  flex-wrap: wrap;
+
 }
+
 
 .section-title{
   width: 150px;
   margin: 25px;
-  /* float: left; */
+  
   color: white;
   text-align: center;
   border-right: 2px solid black;
-  height: 150px;
-  /* display: block; */
+  height: max-content;
+  
   flex-direction: column;
-  /* padding-left: 25px; */
+  
   flex-wrap: wrap;
 }
 
@@ -143,6 +157,17 @@ section .about-info{
 .contact-info{
   width: 100%;
   float: right;
+}
+a{
+  
+  display: inline-block;
+}
+.contact-info p{
+  padding-right: 15px;
+}
+
+section h3{
+  justify-content: center;
 }
 
 section h2 p{
@@ -167,15 +192,39 @@ section h2 p{
 @media screen and (max-width: 768px) {
  section{
    padding: 30px 15px;
+   display: block;
+   
+   text-align: center;
+
+  }
+
+  section h2{
+    text-align: center;
   }
 
   section img {
-   flex: 0 32%;
-   margin-right: 0;
-   margin-top: 15px;
-   margin-bottom: 15px;
+   /* flex: 0 1 10%; */
+  
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+  
+  /* box-sizing: content-box; */
   }
 
+  .section-title{
+    border-right: none;
+    border-bottom: 2px solid black;
+    width: auto;
+    
+  }
+
+  
+
+  section p{
+    width: auto;
+    display: block;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
