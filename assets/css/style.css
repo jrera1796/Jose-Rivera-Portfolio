@@ -6,7 +6,8 @@
 }
 
 body{
-  background-color: #696868
+  background-color: #696868;
+  
 }
 
 p, a{
@@ -37,10 +38,9 @@ header, footer {
 }
 
 header{
-  position: -webkit-sticky;
-  position: sticky;
+ 
   top: 0;
-  z-index: 9999;
+  
 }
 
 footer{
@@ -89,9 +89,14 @@ header nav ul li a{
   /* background-color: red; */
   position: relative;
   
-  display: flex;
 
 }
+#grid{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
 
 .card1{
   width: 100%;
@@ -100,6 +105,7 @@ header nav ul li a{
 justify-content: space-around;
 flex-wrap:wrap;
 padding-right: 10px; 
+
 }
 
 .card2{
@@ -109,21 +115,38 @@ padding-right: 10px;
 justify-content: space-around;
 flex-wrap: wrap;
 padding-right: 10px; 
+grid-row-start: 3;
 }
 /* Article Section*/
 
-.art-img{
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: center;
-  flex: 0 1 30%;
-  
+.art-img1{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.art-img2{
+  grid-row-start: 4;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.art-img3{
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.art-img4{
+  grid-row-start: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 section{
   display: flex;
   flex-wrap: wrap;
-
+  
 }
 
 
@@ -144,7 +167,7 @@ section{
 section p{
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  /* width: 150px; */
 }
 
 section .about-info{
@@ -158,6 +181,7 @@ section .about-info{
   width: 100%;
   float: right;
 }
+
 a{
   
   display: inline-block;
@@ -201,8 +225,11 @@ section h2 p{
   section h2{
     text-align: center;
   }
+#grid{
+  /* display:none; */
 
-  section img {
+}
+  img {
    /* flex: 0 1 10%; */
   
    display: flex;
