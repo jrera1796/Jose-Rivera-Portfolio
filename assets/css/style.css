@@ -97,11 +97,13 @@ header nav ul li a{
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-
+.img-parent{
+  display:flex;
+}
 .card1{
   width: 100%;
-  display: block;
-  position: relative;
+  
+  
 justify-content: space-around;
 flex-wrap:wrap;
 padding-right: 10px; 
@@ -110,12 +112,11 @@ padding-right: 10px;
 
 .card2{
   width: 100%;
-  display: flex;
-  position: relative;
+  
 justify-content: space-around;
 flex-wrap: wrap;
 padding-right: 10px; 
-grid-row-start: 3;
+
 }
 /* Article Section*/
 
@@ -145,7 +146,7 @@ grid-row-start: 3;
 
 section{
   display: flex;
-  flex-wrap: wrap;
+  
   
 }
 
@@ -181,7 +182,9 @@ section .about-info{
   width: 100%;
   float: right;
 }
-
+.Contacts{
+  align-items: baseline;
+}
 a{
   
   display: inline-block;
@@ -226,9 +229,10 @@ section h2 p{
     text-align: center;
   }
 #grid{
-  /* display:none; */
-
+  display: flex;
+  flex-wrap: wrap;
 }
+
   img {
    /* flex: 0 1 10%; */
   
