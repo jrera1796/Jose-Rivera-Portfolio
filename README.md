@@ -8,7 +8,7 @@ This website displays all my current and future work.
 * CSS
 
 ## Website
-https://jrera1796.github.io/jose-rivera-portfolio/
+https://jrera1796.github.io/Jose-Rivera-Portfolio/
 
 ## Contribution
 Made by Jose R.
