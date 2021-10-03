@@ -15,4 +15,4 @@ Made by Jose R.
 
 ### Jose Rivera 2021
 
-![Portfolio Screenshot](/assets/images/webimage.PNG/?raw=true "Portfolio")
+![Portfolio Screenshot](/assets/images/webimage.png/?raw=true "Portfolio")
