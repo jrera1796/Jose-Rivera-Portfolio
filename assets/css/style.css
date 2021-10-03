@@ -10,10 +10,13 @@ body{
   
 }
 
+a{
+  display: inline-block;
+}
+
 p, a{
   color: white;
   font-size: 20px;
- 
 }
 
 p{
@@ -22,33 +25,16 @@ p{
   padding-right: 15px;
   padding-top: 20px;
   font-size: 20px;
-  
 }
-
 
 h4,h2,h3{
  color: white;
- 
 }
 
-header, footer {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #000000;
-  text-align: center;
-}
+/*Header Atrributes*/
 
 header{
- 
-  top: 0;
-  
-}
-
-footer{
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  z-index: 9990;
+ top: 0;
 }
 
 header h1{
@@ -70,52 +56,45 @@ header nav ul{
   list-style-type: none;
 }
 
-/* header nav ul li{
-  display: inline-block;
-} */
-
 header nav ul li a{
   color: white;
 }
 
+header, footer {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  text-align: center;
+}
+
+/*Footer Attributes*/
+
+footer{
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 9990;
+}
+
+/* Hero Attributes */
+
 .hero{
   border-width: 40px;
   border-color: red;
-  
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: bottom;
   height: 600px;
-  
   background-color: purple;
 }
 
+/* Article Section */
 
 #grid{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
-
-.card1{
-  width: 100%;
-  
-  
-justify-content: space-around;
-flex-wrap:wrap;
-padding-right: 10px; 
-
-}
-
-.card2{
-  width: 100%;
-  
-justify-content: space-around;
-flex-wrap: wrap;
-padding-right: 10px; 
-
-}
-/* Article Section*/
 
 .art-img1{
   grid-column-start: 2;
@@ -124,7 +103,6 @@ padding-right: 10px;
 
 .art-img2{
   grid-row-start: 4;
-
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -141,53 +119,47 @@ padding-right: 10px;
   grid-column-end: 5;
 }
 
+.card1{
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  padding-right: 10px; 
+}
+
+.card2{
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 10px; 
+}
+
+/* Section Attributes */
+
 section{
   display: flex;
-  
-  
 }
 
 
 .section-title{
   width: 150px;
   margin: 25px;
-  
   color: white;
   text-align: center;
   border-right: 2px solid black;
   height: max-content;
-  
   flex-direction: column;
-  
   flex-wrap: wrap;
 }
 
 section p{
   display: flex;
   flex-wrap: wrap;
-  /* width: 150px; */
 }
 
 section .about-info{
-  
   width: 50%;
   color: white;
   text-align: center;
-}
-
-.contact-info{
-  width: 100%;
-  float: right;
-}
-.Contacts{
-  align-items: baseline;
-}
-a{
-  
-  display: inline-block;
-}
-.contact-info p{
-  padding-right: 15px;
 }
 
 section h3{
@@ -197,6 +169,21 @@ section h3{
 section h2 p{
   text-align: left;
 }
+
+/*Contact Attributes*/
+
+.contact-info{
+  width: 100%;
+  float: right;
+}
+.Contacts{
+  align-items: baseline;
+}
+
+.contact-info p{
+  padding-right: 15px;
+}
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -225,29 +212,25 @@ section h2 p{
   section h2{
     text-align: center;
   }
-#grid{
-  display: flex;
-  flex-wrap: wrap;
-}
+
+  #grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   img {
-   /* flex: 0 1 10%; */
-  
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-  
-  /* box-sizing: content-box; */
   }
 
   .section-title{
     border-right: none;
     border-bottom: 2px solid black;
     width: auto;
-    
   }
 
-  
+    
 
   section p{
     width: auto;
