@@ -56,7 +56,11 @@ header h1{
  text-align: center;
  
 }
+.header-img{
+  position: absolute;
+  display: block;
 
+}
 header nav{
   padding-top: 15px;
 }
@@ -85,21 +89,13 @@ header nav ul li a{
   background-color: purple;
 }
 
-.hero-title{
-  /* background-color: red; */
-  position: relative;
-  
 
-}
 #grid{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.img-parent{
-  display:flex;
-}
 .card1{
   width: 100%;
   
