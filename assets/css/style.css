@@ -88,6 +88,10 @@ footer{
 }
 
 /* Article Section */
+.my{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
 #grid{
   display: grid;
@@ -138,13 +142,17 @@ section{
   display: flex;
 }
 
+.borderline{
+  border-right: 2px solid black;
+  margin-right: 2%;
+}
 
 .section-title{
   width: 150px;
   margin: 25px;
   color: white;
   text-align: center;
-  border-right: 2px solid black;
+  /* border-right: 2px solid black; */
   height: max-content;
   flex-direction: column;
   flex-wrap: wrap;
